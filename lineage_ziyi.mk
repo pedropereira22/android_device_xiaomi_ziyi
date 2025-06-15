@@ -10,6 +10,13 @@ $(call inherit-product, device/xiaomi/ziyi/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#RisingOS Stuff
+RISING_MAINTAINER := PPereira
+
+# Disable/enable blur support, false by default
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+
 PRODUCT_NAME := lineage_ziyi
 PRODUCT_DEVICE := ziyi
 PRODUCT_MANUFACTURER := Xiaomi
